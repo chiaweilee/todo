@@ -7,9 +7,9 @@ Object.prototype.todo = function (fn) {
 };
 ```
 
-```
+```JavaScript
 { x: 1 }.todo(add).todo(add).todo(add).result // { x: 4 }
-(1).todo(add).todo(add).todo(add).result // 7
+(1).todo(add2).todo(add2).todo(add2).result // 7
 
 function add (x) {
   return { x: x.x + 1 }
